@@ -1,5 +1,5 @@
 import Image from "next/image";
-import EventCard from "@/app/ui/cards";
+import { EventCard } from "@/app/ui/cards";
 
 export default async function Page() {
 

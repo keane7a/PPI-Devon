@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Profile } from "@/app/about/ourteam/types";
 
-
-export default function EventCard({
+export function EventCard({
     image, 
     title, 
     description, 
@@ -35,4 +35,23 @@ export default function EventCard({
         </div>
         </>
     );
+}
+
+export function ProfileCard(
+    {
+        image, 
+        name, 
+        role, 
+        course, 
+        description,
+        linkedin, 
+        instagram, 
+        facebook, 
+    }: Profile
+) {
+    return (
+        <>
+        <h1>profile cards</h1>
+        </>
+    )
 }
