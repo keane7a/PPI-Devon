@@ -38,20 +38,26 @@ export function EventCard({
 }
 
 export function ProfileCard(
-    {
-        image, 
-        name, 
-        role, 
-        course, 
-        description,
-        linkedin, 
-        instagram, 
-        facebook, 
-    }: Profile
+    {profile}: {profile: Profile}
 ) {
     return (
         <>
-        <h1>profile cards</h1>
+        <div className="relative flex flex-col">
+            <h1>profile cards</h1>
+        </div>
+
         </>
     )
 }
+
+
+// {
+//     image, 
+//     name, 
+//     role, 
+//     course, 
+//     description,
+//     linkedin, 
+//     instagram, 
+//     facebook, 
+// }

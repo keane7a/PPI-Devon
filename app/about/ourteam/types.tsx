@@ -1,3 +1,9 @@
+
+export type Content = {
+    year: number, 
+    committees: Profile[],
+} 
+
 export type Profile =
 {
     image: string, 
