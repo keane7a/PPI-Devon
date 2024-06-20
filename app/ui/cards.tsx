@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FaLinkedinIn, FaFacebookF, FaInstagram} from "react-icons/fa";
 import { Profile } from "@/app/about/ourteam/types";
 
 export function EventCard({
@@ -37,27 +38,52 @@ export function EventCard({
     );
 }
 
-export function ProfileCard(
-    {profile}: {profile: Profile}
-) {
+export function ProfileCard({profile}: {profile: Profile}) {
+
+    const logoStyle = "p-2"
+
     return (
         <>
-        <div className="relative flex flex-col">
-            <h1>profile cards</h1>
+        <div className="relative flex flex-col items-center basis-1/2 xl:basis-1/4  ">
+            <div className="" id="replace with image">
+                <div className="w-[200px] h-[200px] bg-purple-300"></div>
+                {/* <Image className="w-full" src={profile.image} width={500} height={500} alt=""/> */}
+            </div>
+            <h2 className="text-lg font-bold">{profile.name}</h2>
+            <p className="">{profile.role}</p>
+            <p className="">{profile.course}</p>
+            <p className="text-justify px-8">{profile.description}</p>
+            <div className="flex flex-row">
+            
+            {"linkedin" in profile ? 
+            (
+                <>
+                <Link className={logoStyle} href={profile.linkedin || ""} prefetch={false}>
+                    <FaLinkedinIn />
+                </Link>
+                </>
+            ):(<></>)}
+
+            {"facebook" in profile ? 
+            (
+                <>
+                <Link className={logoStyle} href={profile.facebook || ""} prefetch={false}>
+                    <FaFacebookF />
+                </Link>
+                </>
+            ):(<></>)}
+
+            {"instagram" in profile ? 
+            (
+                <>
+                <Link className={logoStyle} href={profile.instagram || ""} prefetch={false}>
+                    <FaInstagram />
+                </Link>
+                </>
+            ):(<></>)}
+            </div>
         </div>
 
         </>
     )
 }
-
-
-// {
-//     image, 
-//     name, 
-//     role, 
-//     course, 
-//     description,
-//     linkedin, 
-//     instagram, 
-//     facebook, 
-// }
