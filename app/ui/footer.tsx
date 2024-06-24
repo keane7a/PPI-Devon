@@ -23,9 +23,6 @@ export default function Footer() {
     return (
     <>
     <footer>
-        <div className="flex justify-center md:justify-start md:ml-5">
-            <Logo className=""/>
-        </div>
         <div className="flex flex-col md:flex-row font-bold md:mx-10 md:mb-6 ">
             <h2 className={`text-center ${style}`}>ppidevon@gmail.com</h2>
             <h2 className={`text-nowrap text-center md:border-x ${style}`}>Devon, United Kingdom</h2>
