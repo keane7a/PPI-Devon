@@ -22,7 +22,6 @@ const links = [
         {name: "Guidebook", href: "/resources/guidebook"},
       ]
   },
-  {name: 'Sponsors', href: '/sponsors'}, 
   {name: 'Contact Us', href: '/contact'},
 ];
 
