@@ -4,34 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedinIn, FaFacebookF, FaInstagram} from "react-icons/fa";
 import { Profile } from "@/app/about/ourteam/types";
+import { Event } from "@/app/events/types";
 
-export function EventCard({
-    image, 
-    title, 
-    description, 
-    location,
-    startTime, 
-    endTime,
-}: {
-    image: string, 
-    title: string, 
-    description: string, 
-    location: string,
-    startTime: Date, 
-    endTime: Date, 
-}) {
+export function EventCard({event}: {event: Event}) {
     return (
         <>
         <div className="relative flex flex-col-reverse md:flex-row w-5/6 md:w-4/6 m-4 border border-black rounded-md">
             <div className="flex flex-col basis-3/5 p-4">
-            <h2 className="font-bold text-xl">{title}</h2>
-            <p className="text-justify pr-4">{description}</p>
-            <p className="pt-4">{startTime.toDateString()}</p>
-            <p>{`${startTime.toTimeString().slice(0,5)} - ${endTime.toTimeString().slice(0,5)}`}</p>
-            <p className="md:absolute md:bottom-0 pt-4 md:py-4">{location} sfs</p>
+            <h2 className="font-bold text-xl">{event.title}</h2>
+            <p className="text-justify pr-4">{event.description}</p>
+            <p className="pt-4">{event.startTime.toDateString()}</p>
+            <p>{`${event.startTime.toTimeString().slice(0,5)} - ${event.endTime.toTimeString().slice(0,5)}`}</p>
+            <p className="md:absolute md:bottom-0 pt-4 md:py-4">{event.location} sfs</p>
             </div>
             
-            <Image className="basis-2/5 rounded-md" src={image} width={1000} height={1000} alt=""/>
+            <Image className="basis-2/5 rounded-md" src={event.image} width={1000} height={1000} alt=""/>
 
         </div>
         </>
