@@ -1,6 +1,8 @@
+'use client'
 import Navbar from "./ui/navbar";
 import Image from "next/image";
 import Link from "next/link";
+import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function Home() {
   return (
@@ -15,8 +17,8 @@ export default function Home() {
           </div>
         </div>  
       </div>
-      <div>
-        instagram
+      <div className="flex justify-center mt-4">
+        <InstagramEmbed url="https://www.instagram.com/ppidevon/" width={700}/>
       </div>
     </div>
   </>

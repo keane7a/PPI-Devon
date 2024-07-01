@@ -58,7 +58,7 @@ export default async function Page() {
             </div>
             <Image className="border-t border-black pt-10 mb-10" src="/about/img_04.jpg" width={2000} height={2000} alt=""/>
             <h1 className="font-bold text-4xl md:text-4xl w-9/12 md:w-1/2 text-center ">Our Sponsors</h1>
-            <div className="mt-4 flex flex-col md:flex-row w-full items-center justify-between">
+            <div className="mt-4 flex flex-col md:flex-row w-full items-center justify-between px-14">
             <Image className="w-56 m-4 md:m-0" src="/sponsors/IDX.png" width={2000} height={2000} alt=""/>
             <Image className="w-56 m-4 md:m-0" src="/sponsors/ID_Clear.svg" width={2000} height={200} alt=""/>
             <Image className="w-56 m-4 md:m-0" src="/sponsors/ksei.png" width={2000} height={2000} alt=""/>
