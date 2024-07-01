@@ -35,10 +35,8 @@ export default async function Page() {
                     i += 1
                     if ((i % 2) == 0) {
                         isReverse = true
-                        console.log("reverse");
                     } else {
                         isReverse = false;
-                        console.log("not reverse");
                     }
                         
                     return (
