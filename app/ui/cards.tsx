@@ -31,7 +31,7 @@ export function ProfileCard({profile}: {profile: Profile}) {
 
     return (
         <>
-        <div className="relative flex flex-col items-center basis-1/2 xl:basis-1/4  ">
+        <div className="relative flex flex-col items-center basis-1/2 xl:basis-1/4 mb-4 ">
             <div className="" id="replace with image">
                 <div className="w-[200px] h-[200px] bg-purple-300"></div>
                 {/* <Image className="w-full" src={profile.image} width={500} height={500} alt=""/> */}
@@ -39,7 +39,6 @@ export function ProfileCard({profile}: {profile: Profile}) {
             <h2 className="text-lg font-bold">{profile.name}</h2>
             <p className="">{profile.role}</p>
             <p className="">{profile.course}</p>
-            <p className="text-justify px-8">{profile.description}</p>
             <div className="flex flex-row">
             
             {"linkedin" in profile ? 

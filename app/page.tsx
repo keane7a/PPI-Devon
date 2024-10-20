@@ -20,6 +20,15 @@ export default function Home() {
       <div className="flex justify-center mt-4">
         <InstagramEmbed url="https://www.instagram.com/ppidevon/" width={700}/>
       </div>
+      
+      <h1 className="font-bold text-4xl md:text-4xl pt-4 text-center ">Our Sponsors</h1>
+      <div className="mt-4 flex flex-col md:flex-row w-full items-center justify-between px-14">
+      <Image className="w-56 m-4 md:m-0" src="/sponsors/IDX.png" width={2000} height={2000} alt=""/>
+      <Image className="w-56 m-4 md:m-0" src="/sponsors/ID_Clear.svg" width={2000} height={200} alt=""/>
+      <Image className="w-56 m-4 md:m-0" src="/sponsors/ksei.png" width={2000} height={2000} alt=""/>
+
+      
+      </div>
     </div>
   </>
   );
