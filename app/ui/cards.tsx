@@ -31,42 +31,43 @@ export function ProfileCard({profile}: {profile: Profile}) {
 
     return (
         <>
-        <div className="relative flex flex-col items-center basis-1/2 xl:basis-1/4 mb-4 ">
-            <div className="" id="replace with image">
-                <div className="w-[200px] h-[200px] bg-purple-300"></div>
-                {/* <Image className="w-full" src={profile.image} width={500} height={500} alt=""/> */}
+
+        <div className="relative flex flex-col items-center basis-1/2 xl:basis-1/4 mb-4">
+            <div>
+                <Image className="w-full w-[200px] h-[300px]" src={profile.image} width={500} height={500} alt=""/>
             </div>
             <h2 className="text-lg font-bold">{profile.name}</h2>
             <p className="">{profile.role}</p>
             <p className="">{profile.course}</p>
+            
             <div className="flex flex-row">
             
-            {"linkedin" in profile ? 
-            (
-                <>
-                <Link className={logoStyle} href={profile.linkedin || ""} prefetch={false}>
-                    <FaLinkedinIn />
-                </Link>
-                </>
-            ):(<></>)}
+                {"linkedin" in profile ? 
+                (
+                    <>
+                    <Link className={logoStyle} href={profile.linkedin || ""} prefetch={false}>
+                        <FaLinkedinIn />
+                    </Link>
+                    </>
+                ):(<></>)}
 
-            {"facebook" in profile ? 
-            (
-                <>
-                <Link className={logoStyle} href={profile.facebook || ""} prefetch={false}>
-                    <FaFacebookF />
-                </Link>
-                </>
-            ):(<></>)}
+                {"facebook" in profile ? 
+                (
+                    <>
+                    <Link className={logoStyle} href={profile.facebook || ""} prefetch={false}>
+                        <FaFacebookF />
+                    </Link>
+                    </>
+                ):(<></>)}
 
-            {"instagram" in profile ? 
-            (
-                <>
-                <Link className={logoStyle} href={profile.instagram || ""} prefetch={false}>
-                    <FaInstagram />
-                </Link>
-                </>
-            ):(<></>)}
+                {"instagram" in profile ? 
+                (
+                    <>
+                    <Link className={logoStyle} href={profile.instagram || ""} prefetch={false}>
+                        <FaInstagram />
+                    </Link>
+                    </>
+                ):(<></>)}
             </div>
         </div>
 

@@ -36,9 +36,7 @@ export default async function Page() {
                 {contents.map((content) => {         
                     var committees = <ProfileList committees={content.committees} /> 
                     return (
-                        <>
                         <Accordion title={`${content.year} - ${content.year + 1}`} content={committees} />
-                        </>
                     );
                 })}
             </div>
