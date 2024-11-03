@@ -1,7 +1,8 @@
 import { Content } from "@/app/about/ourteam/types"
 
 export const contents: Content[] = [
-    {year: 2024, 
+    {
+    year: 2024, 
     committees: 
     [
         {
@@ -110,8 +111,9 @@ export const contents: Content[] = [
         },
     ]
     },
-    {year: 2023, 
-        committees: 
+    {
+    year: 2023, 
+    committees: 
         [
             {
                 name: "Tamara Darby", 
