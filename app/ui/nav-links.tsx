@@ -16,11 +16,11 @@ const links = [
       ]},
   {name: 'Events', href: '/events'},
   {name: 'Resources', href: '/resources', 
-    child: 
-      [
-        {name: "FAQs", href: "/resources/faqs"}, 
-        {name: "Guidebook", href: "/resources/guidebook"},
-      ]
+    // child: 
+    //   [
+    //     {name: "FAQs", href: "/resources/faqs"}, 
+    //     {name: "Guidebook", href: "/resources/guidebook"},
+    //   ]
   },
   {name: 'Contact Us', href: '/contact'},
 ];
