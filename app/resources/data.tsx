@@ -11,7 +11,15 @@ export var resources = [
         link: "",
     }, 
     {
-        name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART)", 
+        name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) 2024", 
+        link: "",
+    },
+    {
+        name: "Guidebook 2023", 
+        link: "",
+    }, 
+    {
+        name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) 2023", 
         link: "",
     },
 ]
