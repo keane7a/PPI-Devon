@@ -21,7 +21,6 @@ export function EventCard({event}: {event: Event}) {
                     <p><strong>Time:</strong> {`${event.startTime.toTimeString().slice(0,5)} - ${event.endTime.toTimeString().slice(0,5)}`}</p>
                     <p><strong>Location:</strong>  {event.location}</p>
                 </div>
-
             </div>
             <Image className="size-full md:h-auto md:w-auto rounded-r-lg" src={event.image} width={200} height={200} alt=""/>
         </div>

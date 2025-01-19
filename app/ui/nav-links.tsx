@@ -12,16 +12,9 @@ const links = [
       [
         {name: "History", href: '/about/history'}, 
         {name: "Our Team", href: '/about/ourteam'}, 
-        {name: "AD/ART", href: "about/adart"},
       ]},
   {name: 'Events', href: '/events'},
-  {name: 'Resources', href: '/resources', 
-    // child: 
-    //   [
-    //     {name: "FAQs", href: "/resources/faqs"}, 
-    //     {name: "Guidebook", href: "/resources/guidebook"},
-    //   ]
-  },
+  {name: 'Resources', href: '/resources'},
   {name: 'Contact Us', href: '/contact'},
 ];
 
