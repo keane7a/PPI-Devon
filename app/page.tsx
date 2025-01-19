@@ -8,6 +8,7 @@ export default function Home() {
   return (
   <>
     <div className="flex flex-col">
+ 
       <div className="h-dvh w-full bg-center bg-cover bg-[url('/homepage_bg.jpg')] text-white">
         <div className="flex flex-col text-center mt-80">
           <h1 className="text-4xl md:text-8xl font-bold mx-10 md:mx-40 md:px-8">Greetings and Welcome!</h1>

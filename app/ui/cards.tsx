@@ -7,19 +7,23 @@ import { Profile } from "@/app/about/ourteam/types";
 import { Event } from "@/app/events/types";
 
 export function EventCard({event}: {event: Event}) {
+    let currentTime = new Date()
     return (
         <>
-        <div className="relative flex flex-col-reverse md:flex-row w-5/6 md:w-4/6 m-4 border border-black rounded-md">
-            <div className="flex flex-col basis-3/5 p-4">
-            <h2 className="font-bold text-xl">{event.title}</h2>
-            <p className="text-justify pr-4">{event.description}</p>
-            <p className="pt-4">{event.startTime.toDateString()}</p>
-            <p>{`${event.startTime.toTimeString().slice(0,5)} - ${event.endTime.toTimeString().slice(0,5)}`}</p>
-            <p className="md:absolute md:bottom-0 pt-4 md:py-4">{event.location} sfs</p>
-            </div>
-            
-            <Image className="basis-2/5 rounded-md" src={event.image} width={1000} height={1000} alt=""/>
+        <div className={"flex flex-col-reverse border border-black rounded-lg md:flex-row m-4 md:w-7/12 " + ((currentTime > event.startTime) ? 'grayscale': '')}>
+            <div className="flex flex-col justify-between p-4">
+                <div>
+                    <h2 className="font-bold text-xl mb-4">{event.title}</h2>
+                    <p className="font-normal mb-4">{event.description}</p>
+                </div>
+                <div>
+                    <p><strong>Date:</strong> {event.startTime.toDateString()}</p>
+                    <p><strong>Time:</strong> {`${event.startTime.toTimeString().slice(0,5)} - ${event.endTime.toTimeString().slice(0,5)}`}</p>
+                    <p><strong>Location:</strong>  {event.location}</p>
+                </div>
 
+            </div>
+            <Image className="size-full md:h-auto md:w-auto rounded-r-lg" src={event.image} width={200} height={200} alt=""/>
         </div>
         </>
     );
