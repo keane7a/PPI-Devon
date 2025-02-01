@@ -3,6 +3,7 @@ import { Accordion } from "@/app/ui/accordion";
 import { ProfileCard } from "@/app/ui/cards";
 import { Profile, Content } from "@/app/about/ourteam/types";
 import { contents } from "@/app/about/ourteam/data";
+import {v4 as uuidv4} from "uuid";
 
 function ProfileList({committees}: {committees: Profile[]}) {
     return (
@@ -11,7 +12,7 @@ function ProfileList({committees}: {committees: Profile[]}) {
             {committees.map((committee) => {
                 return (
                     <>
-                        <ProfileCard profile={committee}/>
+                        <ProfileCard profile={committee} key={uuidv4()}/>
                     </>
                 );
             })}
@@ -36,7 +37,7 @@ export default async function Page() {
                 {contents.map((content) => {         
                     var committees = <ProfileList committees={content.committees} /> 
                     return (
-                        <Accordion title={`${content.year} - ${content.year + 1}`} content={committees} />
+                        <Accordion title={`${content.year} - ${content.year + 1}`} content={committees} key={uuidv4()}/>
                     );
                 })}
             </div>
