@@ -7,21 +7,13 @@ function Link({text, link}: {text: string, link:string})  {
 
 export var resources = [
     {
-        name: "Guidebook 2024", 
-        link: "/resources/test.pdf",
+        name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) PPI Devon 2025", 
+        link: "/resources/AD_ART_PPI_DEVON.pdf",
     }, 
     {
-        name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) 2024", 
-        link: "",
-    },
-    // {
-    //     name: "Guidebook 2023", 
-    //     link: "",
-    // }, 
-    // {
-    //     name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) 2023", 
-    //     link: "",
-    // },
+        name: "PPI Devon Playbook 2025", 
+        link: "/resources/PPI_Devon_Playbook.pdf",
+    }
 ]
 
 
