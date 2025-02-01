@@ -41,7 +41,7 @@ export default async function Page() {
                         
                     return (
                         <>
-                        <div className={`md:flex  ${isReverse ? 'md:flex-row-reverse': ''}`}>
+                        <div className={`md:flex  ${isReverse ? 'md:flex-row-reverse': ''}`} key={content.title}>
                             <div className={`flex p-4 border-t border-black items-center md:w-1/2 ${isReverse ? "md:border-l": ""}`}>
                                 <div className="md:p-10 justify-center">
                                 <h1 className="text-center font-bold text-2xl pb-4">{content.title}</h1>
