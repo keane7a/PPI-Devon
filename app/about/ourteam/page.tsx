@@ -26,7 +26,7 @@ export default async function Page() {
                 <h1 className="m-auto font-bold text-xl md:text-6xl w-full text-center mb-4">Our Team</h1>
                 <p className="text-l text-justify md:text-center w-3/4 md:w-1/2 md:py-4 m-auto" >
                     Being aware of the committees in your organisation is crucial to 
-                    comprehending the responsibilities they play in directing the organisation's 
+                    comprehending the responsibilities they play in directing the organisation&apos;s 
                     leadership structure. This data makes it easier to collaborate and communicate 
                     effectively, which guarantees that efforts are in line with strategic goals.
                 </p>

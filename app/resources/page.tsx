@@ -24,7 +24,7 @@ export default async function Page() {
     return (
         <div className="mt-8 m-4 md:mx-14">
             {/* Resources */}
-            <h1 className="font-bold text-xl md:text-4xl w-full text-left">PPI Devon's Resources</h1>
+            <h1 className="font-bold text-xl md:text-4xl w-full text-left">PPI Devon&apos;s Resources</h1>
             <div className="text-slate-80 dark:text-white-100 mb-10">
                 <ul className="list-inside md:grid md:grid-cols-2 gap-x-8 gap-y-6 items-end list-none">
                     {resources.map((resource) => {
