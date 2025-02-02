@@ -11,9 +11,7 @@ function ProfileList({committees}: {committees: Profile[]}) {
         <div className="flex flex-wrap flex-col md:flex-row w-full items-center py-8">        
             {committees.map((committee) => {
                 return (
-                    <>
-                        <ProfileCard profile={committee} key={uuidv4()}/>
-                    </>
+                    <ProfileCard profile={committee} key={uuidv4()}/>
                 );
             })}
         </div>
@@ -22,7 +20,6 @@ function ProfileList({committees}: {committees: Profile[]}) {
 }
 
 export default async function Page() {
-
     return (
         <>
         <div className="w-full items-center">
