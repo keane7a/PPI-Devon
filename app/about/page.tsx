@@ -34,7 +34,6 @@ export default async function Page() {
                 {contents.map(content => {
                     i += 1                        
                     return (
-                        <>
                         <div className={`md:flex  ${(i % 2)  ? 'md:flex-row-reverse': ''}`} key={uuidv4()}>
                             <div className={`flex p-4 border-t border-black items-center md:w-1/2 ${(i % 2) ? "md:border-l": ""}`}>
                                 <div className="md:p-10 justify-center">
@@ -46,7 +45,6 @@ export default async function Page() {
                                 <Image src={content.image} width={600} height={600} alt={`Image of ${content.title}`} />
                             </div>
                         </div>
-                        </>
                     )
                 })}
             </div>
