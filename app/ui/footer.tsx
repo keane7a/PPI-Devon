@@ -8,7 +8,7 @@ import { useState } from "react";
 const size_link = 30
 const links = [
     {name: "linkedin", icon: <><FaLinkedinIn size={size_link}/></>, href: "https://uk.linkedin.com/company/ppidevon"},
-    {name: "facebook", icon: <><FaFacebookF size={size_link}/></>, href: "https://www.facebook.com/groups/171899451981/"},
+    {name: "facebook", icon: <><FaFacebookF size={size_link}/></>, href: "https://www.facebook.com/people/PPI-Devon/61566020871230/"},
     {name: "instagram", icon: <><FaInstagram size={size_link}/></>, href: "https://www.instagram.com/ppidevon/"},
     {name: "tiktok", icon: <><FaTiktok size={size_link}/></>, href: "https://www.tiktok.com/@ppidevon"},
 ];
@@ -24,7 +24,7 @@ export default function Footer() {
     <>
     <footer>
         <div className="flex flex-col md:flex-row font-bold md:mx-10 md:mb-6 ">
-            <h2 className={`text-center ${style}`}>ppidevon@gmail.com</h2>
+            <h2 className={`text-center ${style}`}>ppidevon88@gmail.com</h2>
             <h2 className={`text-nowrap text-center md:border-x ${style}`}>Devon, United Kingdom</h2>
 
             <div className={`flex flex-row justify-center ${style}`}>

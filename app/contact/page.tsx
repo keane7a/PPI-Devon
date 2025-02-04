@@ -7,7 +7,8 @@ export default async function Page() {
     <div className="flex flex-col gap-6 max-w-viewport justify-center p-4 lg:px-96 px-layout-lg mx-auto">
         <div>
             <h2 className="text-2xl pb-2">PPI Devon</h2>
-            <p className="text-lg">Ask us anything at <a className="underline text-red-900 hover:no-underline hover:text-black" href="mailto:ppidevon@gmail.com">ppidevon@gmail.com</a></p>
+            <p className="text-lg">Ask us anything at <a className="underline text-red-900 hover:no-underline hover:text-black" href="mailto:ppidevon88@gmail.com">ppidevon88@gmail.com
+            </a></p>
         </div>
 
         <div>
