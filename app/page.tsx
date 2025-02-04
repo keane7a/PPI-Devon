@@ -6,9 +6,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function Home() {
   return (
-  <>
     <div className="flex flex-col">
- 
       <div className="h-dvh w-full bg-center bg-cover bg-[url('/homepage_bg.jpg')] text-white">
         <div className="flex flex-col text-center mt-80">
           <h1 className="text-4xl md:text-8xl font-bold mx-10 md:mx-40 md:px-8">Greetings and Welcome!</h1>
@@ -27,10 +25,7 @@ export default function Home() {
       <Image className="w-56 m-4 md:m-0" src="/sponsors/IDX.png" width={2000} height={2000} alt=""/>
       <Image className="w-56 m-4 md:m-0" src="/sponsors/ID_Clear.svg" width={2000} height={200} alt=""/>
       <Image className="w-56 m-4 md:m-0" src="/sponsors/ksei.png" width={2000} height={2000} alt=""/>
-
-      
       </div>
     </div>
-  </>
   );
 }

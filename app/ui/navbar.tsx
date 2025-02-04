@@ -20,7 +20,7 @@ export default function Navbar() {
                 <Logo/>
             </Link>
             
-            <nav className=' flex w-11/12 justify-end border-t border-t-black'>
+            <nav className='flex w-11/12 justify-end border-t border-t-black'>
                 <div className='hidden md:flex'>
                     <NavLinks/>
                 </div>
@@ -29,7 +29,7 @@ export default function Navbar() {
                 </div>
             </nav>
             {isOpen && (
-                <div className='flex basis-full flex-col items-center md:hidden'>
+                <div className='z-100 basis-full place-items-center'>
                     <NavLinks/>
                 </div>
             )}
@@ -37,10 +37,6 @@ export default function Navbar() {
     </>
     );
 }
-
-
-
-
 
 
 

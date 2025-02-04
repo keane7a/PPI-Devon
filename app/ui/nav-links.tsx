@@ -43,19 +43,13 @@ export default function NavLinks() {
           </Link>
           
           {typeof link.child !== 'undefined' ? (
-            <div className='group-hover:flex absolute flex-col hidden bg-white shadow text-center'>
+            <div className='flex flex-col text-center md:group-hover:flex md:absolute md:flex-col md:hidden md:bg-white md:shadow'>
             {link.child?.map((child) => {
               return (
                 <Link
                   key={uuidv4()}
                   href={child.href}
-                  className={clsx(
-                  "p-5 cursor-pointer border border-transparent hover:border-black", 
-                  {
-                    '': pathname == child.href
-                  }
-                  )}
-                
+                  className="p-5 cursor-pointer border border-transparent hover:border-black"
                 >
                   <p>{child.name}</p>
                 </Link>
