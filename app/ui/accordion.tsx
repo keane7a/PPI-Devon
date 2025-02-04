@@ -15,9 +15,10 @@ export function Accordion({
     return (
         <>
         <div className="p-4">
-            <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex justify-between w-full">
-                <span>{title}</span>
+            <button onClick={() => setAccordionOpen(!accordionOpen)} className="flex w-full justify-between">
+                <span className="text-left w-4/5">{title}</span>
                 {accordionOpen ? <span><FiMinus/></span> : <span><FiPlus /></span>}
+
             </button>
             <div className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
                 accordionOpen 

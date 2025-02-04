@@ -40,7 +40,7 @@ export default async function Page() {
 
             {/* FAQs */}
             <h1 className="font-bold text-xl md:text-4xl text-left mb-5">FAQs</h1>
-            <div className="rounded-lg bg-gray-100 ">
+            <div className="rounded-lg bg-gray-100">
                     {faqs.map((faq) => {        
                         return (
                             <Accordion title={faq.question} content={faq.answer} key={uuidv4()} />
