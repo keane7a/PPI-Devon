@@ -8,7 +8,7 @@ function Link({text, link}: {text: string, link:string})  {
 export var resources = [
     {
         name: "Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) PPI Devon 2025", 
-        link: "/resources/AD_ART_PPI_DEVON.pdf",
+        link: "/resources/AD_ART_PPI_Devon.pdf",
     }, 
     {
         name: "PPI Devon Playbook 2025", 
