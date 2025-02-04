@@ -7,13 +7,12 @@ import { Profile } from "@/app/about/ourteam/types";
 import { Event } from "@/app/events/types";
 
 export function EventCard({event}: {event: Event}) {
-    let currentTime = new Date()
     return (
         <>
             <div className="flex flex-col justify-between p-4">
                 <div>
                     <h2 className="font-bold text-xl mb-4">{event.title}</h2>
-                    <p className="font-normal mb-4">{event.description}</p>
+                    <p className="font-normal mb-4 text-justify">{event.description}</p>
                 </div>
                 <div>
                     <p><strong>Date:</strong> {event.startTime.toDateString()}</p>
@@ -21,7 +20,7 @@ export function EventCard({event}: {event: Event}) {
                     <p><strong>Location:</strong>  {event.location}</p>
                 </div>
             </div>
-            <Image className="size-full md:h-auto md:w-auto rounded-r-lg" src={event.image} width={200} height={200} alt=""/>
+            <Image className="size-full md:h-auto md:w-auto rounded-lg md:rounded-none md:rounded-r-lg" src={event.image} width={200} height={200} alt=""/>
         </>
     );
 }
