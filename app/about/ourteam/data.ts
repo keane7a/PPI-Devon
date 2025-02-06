@@ -67,6 +67,12 @@ export const contents: Content[] = [
             image: "/ourteam/2024-2025/IMG-20241025-WA0009.jpg", 
         },
         {
+            name: "Ahmad Fathani", 
+            role: "Sports and Talent Officer", 
+            course: "3rd Year BSc Accounting and Finance", 
+            image: "/ourteam/2024-2025/IMG-20241025-WA00021.jpg" 
+        },
+        {
             name: "Muhammad Gentamara", 
             role: "Sports and Talent Officer", 
             course: "Year 2 BSc Marketing and Management",
