@@ -29,13 +29,13 @@ export var faqs = [
         question: "How do I get to the University from my acommodation?", 
         answer: 
         <>
-        You can either walk (most acommodation will take 5-30 minutes to go to uni) or you can take the bus with a service UNI. More information can be found here <Link text="here" link="https://www.stagecoachbus.com/promos-and-offers/south-west/getting-to-exeter-university-by-bus"/>
+        You can either walk (most acommodation will take 5-30 minutes to go to uni) or you can take the bus with a service UNI. More information can be found <Link text="here" link="https://www.stagecoachbus.com/promos-and-offers/south-west/getting-to-exeter-university-by-bus"/>
         </>,
     },
     {
         question: "What options do I have for acommodation?", 
         answer: <>
-        There are many! Year 1 students mostly stay on university acommodation located around campus. More information can be found here <Link text="here" link="https://www.exeter.ac.uk/study/accommodation/"/>
+        There are many! Year 1 students mostly stay on university acommodation located around campus. More information can be found <Link text="here" link="https://www.exeter.ac.uk/study/accommodation/"/>
         </>
     },
     {
@@ -47,7 +47,7 @@ export var faqs = [
     {
         question: "How do I ask general inquiries to the the University?",
         answer: <>
-        University of Exeter has this thing called Student Information Desk (SID) where you can ask anything related to accommodations, fees, international student support, and more! Check it out <Link text="here" link="https://www.exeter.ac.uk/students/sid/"/>  
+        University of Exeter offers a Student Information Desk (SID) where you can get answers to all your questions about accommodations, fees, international student support, and more! Check it out <Link text="here" link="https://www.exeter.ac.uk/students/sid/"/>  
         </>
     }, 
 ]
