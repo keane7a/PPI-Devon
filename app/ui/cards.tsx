@@ -33,7 +33,7 @@ export function ProfileCard({profile}: {profile: Profile}) {
         <>
         <div className="relative flex flex-col items-center basis-1/2 xl:basis-1/4 mb-4">
             <div>
-                <Image className="w-64 md:w-80 aspect-16/9"  src={profile.image} width={500} height={500} alt=""/>
+                <Image className="w-52 md:w-80 aspect-16/9"  src={profile.image} width={500} height={500} alt=""/>
             </div>
             <h2 className="text-lg font-bold">{profile.name}</h2>
             <p className="">{profile.role}</p>
